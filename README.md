@@ -1,174 +1,148 @@
-# Student Management System (Python)
+# Student Management System
 
-A console-based Student Management System developed in Python. This project started as a basic student record system and was improved in Version 2 by adding functions, validation, CRUD operations, and class performance statistics.
+A console-based Student Management System built with Python. This project was developed as a learning project to practice Python fundamentals and gradually build a practical application.
 
-## Version 2 Features
+## Project Versions
 
-* Add a new student record
-* View all student records
-* Search for a student by Roll Number
+### V1 — Basic Student Management System
+
+The first version focuses on the fundamentals of Python and basic student record management.
+
+**Features:**
+
+* Add a student
+* Store student marks
+* Calculate average marks
+* Assign grades
+* View student information
+* Search student records
+
+### V2 — Improved Student Management System
+
+V2 expands the project into a complete menu-driven student management system.
+
+**Features:**
+
+* Add multiple students
+* View all students
+* Search student by roll number
 * Update student marks
 * Delete student records
-* Prevent duplicate Roll Numbers
-* Validate marks between 0 and 100
-* Calculate average marks automatically
-* Assign grades based on average marks
-* Generate performance comments
-* Display class statistics
+* Class statistics
 * Calculate class average
-* Find the highest-performing student
-* Find the lowest-performing student
-* Menu-driven interface
+* Find highest-performing student
+* Find lowest-performing student
+* Calculate grades automatically
+* Generate performance comments
+* Validate marks from 0 to 100
+* Prevent duplicate roll numbers
+* Handle empty student records
+* Menu-driven program
 * Exit option
 
-## Technologies Used
+## Python Concepts Practiced
 
-* Python 3
-
-## Concepts Practiced
+This project helped me practice:
 
 * Variables
-* User Input
-* Type Conversion
-* Conditional Statements (`if`, `elif`, `else`)
-* `while` Loop
-* `for` Loop
+* Data types
+* Input and output
+* Conditional statements
+* `if`, `elif`, and `else`
+* `for` loops
+* `while` loops
 * Functions
 * Dictionaries
-* Nested Dictionaries
-* Dictionary Membership (`in`)
-* Dictionary Methods (`pop`)
-* Data Validation
-* CRUD Operations
-* Data Organization
-* Menu-Driven Programming
-* Basic Statistics
-* Problem-Solving
+* Nested dictionaries
+* Dictionary indexing
+* Dictionary methods
+* `pop()`
+* Membership testing with `in`
+* Input validation
+* Accumulator variables
+* Searching and updating records
 
 ## Project Structure
 
 ```text
 student-management-system-python/
 │
-├── student_management_system.py
-└── README.md
+├── README.md
+│
+├── student_management_systemV1.py
+│
+└── student_management_systemV2.py
+```
+
+## Version Progress
+
+```text
+V1
+│
+├── Basic student records
+├── Marks
+├── Average
+├── Grade
+└── Search
+        ↓
+V2
+│
+├── Multiple students
+├── Add
+├── View
+├── Search
+├── Update
+├── Delete
+├── Class Statistics
+├── Highest Average
+├── Lowest Average
+├── Marks Validation
+├── Duplicate Roll Check
+└── Comments
 ```
 
 ## How to Run
 
-1. Clone the repository.
+Make sure Python is installed on your computer.
+
+Run V1:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/student-management-system-python.git
+python student_management_systemV1.py
 ```
 
-2. Navigate to the project folder.
+Run V2:
 
 ```bash
-cd student-management-system-python
+python student_management_systemV2.py
 ```
 
-3. Run the program.
+The programs run in the terminal or command prompt.
 
-```bash
-python student_management_system.py
-```
+## Learning Goal
 
-## Main Menu
+The main goal of this project is to learn Python through practical implementation.
 
-```text
-==== Main Menu ====
-
-1. Add Student
-2. View Students
-3. Search Student
-4. Update Student
-5. Delete Student
-6. Class Statistics
-7. Exit
-```
-
-## Student Record Structure
-
-Each student is stored using a nested dictionary:
-
-```python
-students[roll_no] = {
-    "Name": name,
-    "Marks": {
-        "English": english,
-        "Math": math,
-        "Computer": computer,
-        "Physics": physics
-    },
-    "Average": average,
-    "Grade": grade,
-    "Comment": comment
-}
-```
-
-## Version Progression
-
-### Version 1
-
-The first version focused on Python fundamentals and basic student record management.
-
-V1 included:
-
-* Add student
-* View students
-* Search student
-* Calculate average
-* Assign grades
-* Generate comments
-* Menu-driven programming
-* Nested dictionaries
-
-### Version 2
-
-Version 2 expanded the project into a more complete Student Management System.
-
-New improvements include:
-
-* Functions for grade and comment calculation
-* Marks validation from 0–100
-* Duplicate Roll Number prevention
-* Update Student
-* Delete Student
-* Class Statistics
-* Class average calculation
-* Highest student calculation
-* Lowest student calculation
-* Better data management using nested dictionaries
-
-## Learning Outcome
-
-This project helped strengthen my understanding of Python by applying concepts in a practical console application.
-
-Through this project, I practiced:
-
-* Python fundamentals
-* Functions
-* Nested dictionaries
-* Loops
-* Conditional logic
-* Data validation
-* CRUD operations
-* Data management
-* Problem-solving
-* Console application development
+Instead of only practicing individual Python concepts, this project combines them into a working application and improves the application version by version.
 
 ## Future Improvements
 
-* Save student data to a file
-* Load student data from a file
-* Add more subjects
-* Improve input error handling
-* Add student ranking
-* Add percentage calculation
-* Create a graphical user interface (GUI)
-* Connect the application to a database
+Future versions may include:
+
+* Better input error handling
+* More reusable functions
+* Cleaner code structure
+* File handling
+* Data persistence
+* More advanced student statistics
+* Additional search and filtering options
 
 ## Author
 
 **Sonila Shoukat**
+
+BS Information Technology Student
+
+---
+
+*This project is part of my journey of learning Python and building practical programming projects.*
